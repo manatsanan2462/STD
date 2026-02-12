@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        body { font-family: 'Prompt', sans-serif; background-color: #f9fafb; }
+        /* สไตล์ปุ่มที่ใช้บ่อย */
+        .btn-primary { background-color: #4FA3D1; transition: 0.3s; color: white; padding: 0.75rem 1.5rem; border-radius: 0.375rem; }
+        .btn-primary:hover { background-color: #3d82a8; }
+        /* สไตล์หัวข้อ */
+        .section-title { color: #0A1F33; font-weight: 700; font-size: 2.25rem; margin-bottom: 1.5rem; }
+    </style>
+</head>
+<body>
+
+    <nav class="fixed w-full z-50 bg-[#0A1F33]/90 backdrop-blur-md text-white border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold tracking-tighter text-[#4FA3D1]">STD <span class="text-white">ENGINEERING</span></div>
+            <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest font-light">
+                <a href="index.html" class="hover:text-[#4FA3D1] transition">หน้าแรก</a>
+                <a href="about us.html" class="hover:text-[#4FA3D1] transition">เกี่ยวกับเรา</a>
+                <a href="service0.html" class="hover:text-[#4FA3D1] transition">บริการของเรา</a>
+                <a href="article.html" class="hover:text-[#4FA3D1] transition">บทความ</a>
+				<a href="projects0.html" class="hover:text-[#4FA3D1] transition">ผลงาน</a>
+				<a href="contact.html" class="hover:text-[#4FA3D1] transition">ติดต่อเรา</a>
+                <a href="quotation.html" class="hover:text-[#4FA3D1] transition border border-[#4FA3D1] px-4 py-1 rounded">ขอใบเสนอราคา</a>
+            </div>
+        </div>
+    </nav>
+	
+	
+<section class="max-w-7xl mx-auto py-20 px-6">
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-12">
+        
+        <div class="lg:col-span-1">
+            <div class="sticky top-24 space-y-2">
+                <h3 class="text-[#0A1F33] font-bold text-xl mb-6 border-l-4 border-[#4FA3D1] pl-4">หมวดหมู่บริการ</h3>
+                <a href="#ndt" class="block py-3 px-4 bg-[#0A1F33] text-white rounded shadow-md transition">งานตรวจสอบ NDT</a>
+                <a href="#gas" class="block py-3 px-4 hover:bg-gray-200 text-gray-700 rounded transition">งานก๊าซธรรมชาติ (NGV)</a>
+                <a href="#lpg" class="block py-3 px-4 hover:bg-gray-200 text-gray-700 rounded transition">งานก๊าซหุงต้ม (LPG)</a>
+                <a href="#other" class="block py-3 px-4 hover:bg-gray-200 text-gray-700 rounded transition">งานระบบท่อ & เขียนแบบ</a>
+            </div>
+        </div>
+
+        <div class="lg:col-span-3 space-y-20">
+            
+            <div id="ndt" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-[#0A1F33] mb-8">งานทดสอบโดยไม่ทำลาย (Non-Destructive Testing)</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="p-6 bg-white border-t-4 border-[#4FA3D1] shadow-sm hover:shadow-xl transition">
+                        <div class="text-[#4FA3D1] font-bold text-xl mb-2">PT & MT</div>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            การตรวจสอบรอยร้าวบนพื้นผิวด้วยสารแทรกซึม (PT) และอนุภาคแม่เหล็ก (MT) ตามมาตรฐาน ASME และ ASTM เพื่อความปลอดภัยสูงสุดของโครงสร้าง
+                        </p>
+                    </div>
+                    <div class="p-6 bg-white border-t-4 border-[#4FA3D1] shadow-sm hover:shadow-xl transition">
+                        <div class="text-[#4FA3D1] font-bold text-xl mb-2">UT & UTM</div>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            การตรวจสอบความสมบูรณ์และวัดความหนาด้วยคลื่นความถี่สูง (Ultrasonic Testing) เพื่อประเมินการกัดกร่อนและความพร้อมใช้งานของวัสดุ
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="gas" class="pt-10 border-t" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-[#0A1F33] mb-4">งานตรวจสอบก๊าซธรรมชาติ (NGV / CNG)</h2>
+                <p class="text-gray-500 mb-8 font-light italic text-sm">"ดำเนินการตามข้อกำหนดของกรมธุรกิจพลังงานและมาตรฐานความปลอดภัยสากล"</p>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <span class="text-[#4FA3D1] mr-3">✔</span>
+                        <span>ตรวจสอบสถานีบริการก๊าซธรรมชาติและคลังก๊าซประจำปี</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-[#4FA3D1] mr-3">✔</span>
+                        <span>ตรวจสอบรถขนส่งก๊าซและถังบรรจุก๊าซความดันสูง</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-[#4FA3D1] mr-3">✔</span>
+                        <span>งานประสานงานขอใบอนุญาตและต่ออายุประจำปีกับหน่วยงานรัฐ</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+<footer class="bg-[#0A1F33] text-white pt-16 pb-8 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+            <div>
+                <div class="text-2xl font-bold text-[#4FA3D1] mb-4">STD ENGINEERING</div>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    ผู้นำด้านการตรวจสอบวิศวกรรม มาตรฐานสากล ดำเนินงานถูกต้องตามกฎหมายและเน้นความปลอดภัยสูงสุด
+                </p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4 border-b border-[#4FA3D1] w-12 pb-1">เมนู</h4>
+                <ul class="text-gray-400 text-sm space-y-2">
+                    <li><a href="index.html" class="hover:text-white transition">หน้าแรก</a></li>
+                    <li><a href="about.html" class="hover:text-white transition">เกี่ยวกับเรา</a></li>
+                    <li><a href="services.html" class="hover:text-white transition">บริการของเรา</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4 border-b border-[#4FA3D1] w-12 pb-1">ติดต่อเรา</h4>
+                <p class="text-gray-400 text-sm">เลขประจำตัวผู้เสียภาษี: 0123456789XXX</p>
+                <p class="text-gray-400 text-sm">Email: contact@std-engineering.co.th</p>
+                <p class="text-gray-400 text-sm">Tel: 02-XXX-XXXX</p>
+            </div>
+        </div>
+        <div class="text-center text-gray-500 text-xs border-t border-white/5 pt-8">
+            &copy; 2026 STD Engineering & Construction Co., Ltd. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+    </script>
+</body>
+</html> 
